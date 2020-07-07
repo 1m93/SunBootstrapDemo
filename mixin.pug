@@ -35,3 +35,17 @@ mixin trailerVideo (image, name)
                     p.mb-0 play
         .trailer__name.mt-3
             p=name
+
+mixin watch (image, score, name)
+    .watch__list-item.card.col-md.border-0.bg-transparent.mb-3
+        img.card-img-top(src='images/watchs/' + image + '.jpg' alt='...')
+        .card-body.border-0.p-2.pb-3.d-flex.flex-column.justify-content-between
+            div.mb-3
+                p.normalText.mb-1 
+                    i.fas.fa-star
+                    |
+                    | #{score}
+                a(href="#").text-decoration-none.text-white=name
+            div
+                .text-center.mb-3: a.btn.btn-warning.btn-sm(href='#') See more
+                .text-center: a(href="#"): i.fas.fa-play.normalText

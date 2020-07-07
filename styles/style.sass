@@ -11,8 +11,8 @@ body
 .borderTitle
     border-left: 6px solid $PrimaryColor
 
-p 
-    margin-bottom: 0 !important
+.normalText
+    color: $TextColor
 
 header
     background-color: rgba(0, 0, 0, 0.7)
@@ -51,13 +51,28 @@ header
                 visibility: hidden
                 opacity: 0
                 transition: opacity 0.5s, visibility 0.5s
-                & > a 
+                & > a
                     color: $TextColor
                     i
                         font-size: 3vw
-            &:hover 
+            &:hover
                 .trailer__video-text
                     visibility: visible
                     opacity: 1
                 .trailer__video-img
                     transform: scale(1.2)
+
+.watch
+    &__list
+        &-item
+            img:hover
+                cursor: pointer
+                opacity: 0.6
+                transition: 0.5s
+            .card-body
+                background-color: #1a1a1a
+                p i
+                    color: $PrimaryColor
+                .text-center i:hover
+                    transform: scale(1.2)
+                    transition: 0.5s
