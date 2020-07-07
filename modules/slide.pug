@@ -1,0 +1,7 @@
+#slide.carousel.slide(data-ride='carousel')
+    ol.carousel-indicators
+        li.active(data-target='#slide' data-slide-to='0')
+        - for (var i = 1; i < 5; i++)
+            li(data-target='#slide', data-slide-to=i)
+    .carousel-inner
+        +slidePoster(slides)

@@ -1,0 +1,37 @@
+mixin poster (name, year, image, describe)
+    .poster.vw-100.vh-100.text-white.d-flex.align-items-center.justify-content-between(
+        style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/slides/" + image + ".jpg) no-repeat top; background-size: cover; background-attachment: fixed"
+    )
+        .poster__text
+            h1.display-4=name
+                p.lead.d-inline="(" + year + ")"
+            p(style="color: #ffffffb3").lead=describe
+            hr.my-2
+            a.btn.btn-warning.btn-lg(href='#' role='button')
+                i.far.fa-info-circle
+                |
+                | More info
+        nav.poster__button.nav.flex-column.lead.text-center
+            a.nav-link(href='#'): i.fab.fa-facebook-f
+            a.nav-link(href='#'): i.fab.fa-instagram
+            a.nav-link(href='#'): i.fab.fa-twitter
+
+mixin slidePoster (data) 
+    - for (var i = 0; i < 5; i++)
+        if (i == 0)
+            .carousel-item.active
+                +poster (data[i].name, data[i].year, data[i].image, data[i].describe)
+        else 
+            .carousel-item
+                +poster (data[i].name, data[i].year, data[i].image, data[i].describe)
+
+mixin trailerVideo (image, name)
+    .trailer.col-md
+        .trailer__video
+            img.trailer__video-img.img-fluid(src="images/trailers/" + image + ".jpg" alt="")
+            .trailer__video-text.d-flex.flex-column.justify-content-center.text-center
+                a.text-decoration-none(href="#")
+                    i.fal.fa-play-circle
+                    p.mb-0 play
+        .trailer__name.mt-3
+            p=name

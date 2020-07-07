@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <title>Demo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark container"><a class="navbar-brand" href="#"><img src="images/logo.svg" height="40" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav text-uppercase font-weight-bold"><a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a><a class="nav-item nav-link" href="#">Movies</a><a class="nav-item nav-link" href="#">TV Shows</a><a class="nav-item nav-link" href="#">Celebs</a><a class="nav-item nav-link" href="#">Videos</a></div>
+          <div class="mr-auto"></div>
+          <form class="form-inline">
+            <input class="form-control form-control-sm mr-sm-2 bg-transparent text-white border-warning" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-warning btn-sm my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <main class="overflow-hidden">
+      <div class="carousel slide" id="slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li class="active" data-target="#slide" data-slide-to="0"></li>
+          <li data-target="#slide" data-slide-to="1"></li>
+          <li data-target="#slide" data-slide-to="2"></li>
+          <li data-target="#slide" data-slide-to="3"></li>
+          <li data-target="#slide" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="poster vw-100 vh-100 text-white d-flex align-items-center justify-content-between" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/slides/1.jpg) no-repeat top; background-size: cover; background-attachment: fixed">
+              <div class="poster__text">
+                <h1 class="display-4">1917
+                  <p class="lead d-inline">(2019)</p>
+                </h1>
+                <p class="lead" style="color: #ffffffb3">April 6th, 1917. As a regiment assembles to wage war deep in enemy territory, two soldiers are assigned to race against time and deliver a message that will stop 1,600 men from walking straight into a deadly trap.</p>
+                <hr class="my-2"/><a class="btn btn-warning btn-lg" href="#" role="button"><i class="far fa-info-circle"></i>
+                  More info</a>
+              </div>
+              <nav class="poster__button nav flex-column lead text-center"><a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a><a class="nav-link" href="#"><i class="fab fa-instagram"></i></a><a class="nav-link" href="#"><i class="fab fa-twitter"></i></a></nav>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="poster vw-100 vh-100 text-white d-flex align-items-center justify-content-between" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/slides/2.jpg) no-repeat top; background-size: cover; background-attachment: fixed">
+              <div class="poster__text">
+                <h1 class="display-4">Jojo Rabbit
+                  <p class="lead d-inline">(2019)</p>
+                </h1>
+                <p class="lead" style="color: #ffffffb3">A young boy in Hitler's army finds out his mother is hiding a Jewish girl in their home.</p>
+                <hr class="my-2"/><a class="btn btn-warning btn-lg" href="#" role="button"><i class="far fa-info-circle"></i>
+                  More info</a>
+              </div>
+              <nav class="poster__button nav flex-column lead text-center"><a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a><a class="nav-link" href="#"><i class="fab fa-instagram"></i></a><a class="nav-link" href="#"><i class="fab fa-twitter"></i></a></nav>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="poster vw-100 vh-100 text-white d-flex align-items-center justify-content-between" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/slides/3.jpg) no-repeat top; background-size: cover; background-attachment: fixed">
+              <div class="poster__text">
+                <h1 class="display-4">Joker
+                  <p class="lead d-inline">(2019)</p>
+                </h1>
+                <p class="lead" style="color: #ffffffb3">In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: the Joker.</p>
+                <hr class="my-2"/><a class="btn btn-warning btn-lg" href="#" role="button"><i class="far fa-info-circle"></i>
+                  More info</a>
+              </div>
+              <nav class="poster__button nav flex-column lead text-center"><a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a><a class="nav-link" href="#"><i class="fab fa-instagram"></i></a><a class="nav-link" href="#"><i class="fab fa-twitter"></i></a></nav>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="poster vw-100 vh-100 text-white d-flex align-items-center justify-content-between" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/slides/4.jpg) no-repeat top; background-size: cover; background-attachment: fixed">
+              <div class="poster__text">
+                <h1 class="display-4">Knives Out
+                  <p class="lead d-inline">(2019)</p>
+                </h1>
+                <p class="lead" style="color: #ffffffb3">A detective investigates the death of a patriarch of an eccentric, combative family.</p>
+                <hr class="my-2"/><a class="btn btn-warning btn-lg" href="#" role="button"><i class="far fa-info-circle"></i>
+                  More info</a>
+              </div>
+              <nav class="poster__button nav flex-column lead text-center"><a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a><a class="nav-link" href="#"><i class="fab fa-instagram"></i></a><a class="nav-link" href="#"><i class="fab fa-twitter"></i></a></nav>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="poster vw-100 vh-100 text-white d-flex align-items-center justify-content-between" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/slides/5.jpg) no-repeat top; background-size: cover; background-attachment: fixed">
+              <div class="poster__text">
+                <h1 class="display-4">Ford v Ferrari
+                  <p class="lead d-inline">(2019)</p>
+                </h1>
+                <p class="lead" style="color: #ffffffb3">American car designer Carroll Shelby and driver Ken Miles battle corporate interference and the laws of physics to build a revolutionary race car for Ford in order to defeat Ferrari at the 24 Hours of Le Mans in 1966.</p>
+                <hr class="my-2"/><a class="btn btn-warning btn-lg" href="#" role="button"><i class="far fa-info-circle"></i>
+                  More info</a>
+              </div>
+              <nav class="poster__button nav flex-column lead text-center"><a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a><a class="nav-link" href="#"><i class="fab fa-instagram"></i></a><a class="nav-link" href="#"><i class="fab fa-twitter"></i></a></nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="newTrailer container mt-5">
+        <h3 class="font-weight-bold text-warning pl-3 borderTitle">New Trailers</h3>
+        <div class="newTrailer__video mt-3 row"> 
+          <div class="trailer col-md">
+            <div class="trailer__video"><img class="trailer__video-img img-fluid" src="images/trailers/1.jpg" alt=""/>
+              <div class="trailer__video-text d-flex flex-column justify-content-center text-center"><a class="text-decoration-none" href="#"><i class="fal fa-play-circle"></i>
+                  <p class="mb-0">play</p></a></div>
+            </div>
+            <div class="trailer__name mt-3">
+              <p>Avengers: End Game</p>
+            </div>
+          </div>
+          <div class="trailer col-md">
+            <div class="trailer__video"><img class="trailer__video-img img-fluid" src="images/trailers/2.jpg" alt=""/>
+              <div class="trailer__video-text d-flex flex-column justify-content-center text-center"><a class="text-decoration-none" href="#"><i class="fal fa-play-circle"></i>
+                  <p class="mb-0">play</p></a></div>
+            </div>
+            <div class="trailer__name mt-3">
+              <p>Parasite</p>
+            </div>
+          </div>
+          <div class="trailer col-md">
+            <div class="trailer__video"><img class="trailer__video-img img-fluid" src="images/trailers/3.jpg" alt=""/>
+              <div class="trailer__video-text d-flex flex-column justify-content-center text-center"><a class="text-decoration-none" href="#"><i class="fal fa-play-circle"></i>
+                  <p class="mb-0">play</p></a></div>
+            </div>
+            <div class="trailer__name mt-3">
+              <p>Frozen 2</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

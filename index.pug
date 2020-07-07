@@ -1,0 +1,16 @@
+include constant.pug
+include mixin.pug
+
+doctype html
+html(lang='en')
+    head 
+        include modules/head.pug
+
+    body
+        header.fixed-top
+            include modules/navbar.pug
+
+        main.overflow-hidden
+            include modules/slide.pug
+            include modules/newTrailer.pug
+            
