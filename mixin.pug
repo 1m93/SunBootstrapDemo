@@ -26,7 +26,7 @@ mixin slidePoster (data)
                 +poster (data[i].name, data[i].year, data[i].image, data[i].describe)
 
 mixin trailerVideo (image, name)
-    .trailer.col-md
+    .trailer.col-md.mb-3.mb-md-0
         .trailer__video
             img.trailer__video-img.img-fluid(src="images/trailers/" + image + ".jpg" alt="")
             .trailer__video-text.d-flex.flex-column.justify-content-center.text-center
@@ -37,7 +37,7 @@ mixin trailerVideo (image, name)
             p=name
 
 mixin watch (image, score, name)
-    .watch__list-item.card.col-md.border-0.bg-transparent.mb-3
+    .watch__list-item.card.border-0.bg-transparent.col-6.col-md-4.col-lg-2.mb-4.mb-lg-0
         a(href="#").d-block.card-img-top(
             style="background: url(images/watchs/" + image + ".jpg) no-repeat center; background-size: cover"
         )
@@ -53,7 +53,7 @@ mixin watch (image, score, name)
                 .text-center: a(href="#"): i.fas.fa-play.normalText
 
 mixin born (image, name, age)
-    .col-md
+    .col-4.col-md-2.mb-3.mb-md-0
         a(href="#").d-block.born__image.rounded-circle(
             style="background: url(images/borns/" + image + ".jpg) no-repeat center; background-size: cover"
         )
@@ -62,7 +62,7 @@ mixin born (image, name, age)
             p.mb-0.normalText=age
 
 mixin news (image, title, time)
-    a(href="#").d-block.text.text-decoration-none.col-md.d-flex.justify-content-between
+    a(href="#").d-block.text.text-decoration-none.d-flex.justify-content-between.mb-3.col-md
         .news__image
             .news__image-img(
                 style="background: url(images/news/" + image + ".jpg) no-repeat center; background-size: cover"

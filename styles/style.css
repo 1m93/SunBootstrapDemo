@@ -95,7 +95,7 @@ header .navbar-dark .navbar-nav .nav-link.active, header .navbar-dark .navbar-na
 }
 
 .stream__top {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/streamings/top.jpg") no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/streamings/top.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -123,6 +123,20 @@ header .navbar-dark .navbar-nav .nav-link.active, header .navbar-dark .navbar-na
   cursor: pointer;
   opacity: 0.6;
   transition: 0.5s;
+}
+
+@media only screen and (max-width: 1024px) {
+  .poster {
+    padding: 0 2rem;
+  }
+  .poster__text {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .poster {
+    padding: 0 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

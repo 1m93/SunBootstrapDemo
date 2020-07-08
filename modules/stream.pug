@@ -3,17 +3,18 @@
         h3.font-weight-bold.text-warning.pl-3.borderTitle Explore what’s streaming
     .stream__top.vw-100.text-white.py-3.mt-4
         .container.d-md-flex.align-items-center.justify-content-between
-            .stream__top-img.mr-md-5
+            .stream__top-img.mr-0.mr-md-5.mb-3.mb-md-0
                 img(src="images/streamings/poster.jpg" width=200)
             .stream__top-text
-                p.lead Avengers: End Game (2019)
+                p.lead Avengers: Infinity War (2018)
                 p.text-warning Top streaming this week
-                p.normalText After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.
+                p.normalText The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.
                 hr.my-2
                 a.btn.btn-warning.btn-md(href='#' role='button')
                     i.far.fa-info-circle
                     |
                     | More info
+
     .stream__list.container.mt-3
         p.normalText Streaming this week
         .row 
@@ -22,3 +23,4 @@
             +watch(8, "7.6", "Watchmen")
             +watch(9, "7.7", "Airplane!")
             +watch(10, "8.1", "The Big Lebowski")
+            +watch(13, "9.3", "Game of Thrones")
