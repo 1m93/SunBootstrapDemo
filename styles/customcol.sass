@@ -1,0 +1,65 @@
+=col($x)
+    $width: $x/18*100
+    -ms-flex: 0 0 #{$width}+"%"
+    flex: 0 0 #{$width}+"%"
+    max-width: #{$width}+"%"
+
+=col-auto
+    -ms-flex-preferred-size: 0
+    flex-basis: 0
+    -ms-flex-positive: 1
+    flex-grow: 1
+    min-width: 0
+    max-width: 100%
+
+=all-col
+    position: relative
+    width: 100%
+    padding-right: 15px
+    padding-left: 15px
+
+// all col
+.custom-col, .custom-col-sm, .custom-col-md, .custom-col-lg, .custom-col-xl
+    +all-col
+@for $i from 1 through 18
+    .custom-col-#{$i}, .custom-col-sm-#{$i}, .custom-col-md-#{$i}, .custom-col-lg-#{$i}, .custom-col-xl-#{$i}
+        +all-col
+
+// custom col
+.custom-col
+    +col-auto
+@for $i from 1 through 18
+    .custom-col-#{$i}
+        +col($i)
+
+// 576 - sm
+@media (min-width: 576px)
+    .custom-col-sm
+        +col-auto
+    @for $i from 1 through 18
+        .custom-col-sm-#{$i}
+            +col($i)
+
+// 768 - md
+@media (min-width: 768px)
+    .custom-col-md
+        +col-auto
+    @for $i from 1 through 18
+        .custom-col-md-#{$i}
+            +col($i)
+
+// 992 - lg
+@media (min-width: 992px)
+    .custom-col-lg
+        +col-auto
+    @for $i from 1 through 18
+        .custom-col-lg-#{$i}
+            +col($i)
+
+// 1200 - xl
+@media (min-width: 1200px)
+    .custom-col-xl
+        +col-auto
+    @for $i from 1 through 18
+        .custom-col-xl-#{$i}
+            +col($i)
