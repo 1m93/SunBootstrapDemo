@@ -5,7 +5,7 @@ mixin poster (name, year, image, describe)
         .poster__text
             h1.display-4=name
                 p.lead.d-inline="(" + year + ")"
-            p(style="color: #ffffffb3").lead=describe
+            p.normalText.lead=describe
             hr.my-2
             a.btn.btn-warning.btn-lg(href='#' role='button')
                 i.far.fa-info-circle
@@ -38,7 +38,9 @@ mixin trailerVideo (image, name)
 
 mixin watch (image, score, name)
     .watch__list-item.card.col-md.border-0.bg-transparent.mb-3
-        img.card-img-top(src='images/watchs/' + image + '.jpg' alt='...')
+        a(href="#").d-block.card-img-top(
+            style="background: url(images/watchs/" + image + ".jpg) no-repeat center; background-size: cover"
+        )
         .card-body.border-0.p-2.pb-3.d-flex.flex-column.justify-content-between
             div.mb-3
                 p.normalText.mb-1 
@@ -49,3 +51,22 @@ mixin watch (image, score, name)
             div
                 .text-center.mb-3: a.btn.btn-warning.btn-sm(href='#') See more
                 .text-center: a(href="#"): i.fas.fa-play.normalText
+
+mixin born (image, name, age)
+    .col-md
+        a(href="#").d-block.born__image.rounded-circle(
+            style="background: url(images/borns/" + image + ".jpg) no-repeat center; background-size: cover"
+        )
+        .born__text.text-center.mt-3 
+            a.text-white(href="#")=name
+            p.mb-0.normalText=age
+
+mixin news (image, title, time)
+    a(href="#").d-block.text.text-decoration-none.col-md.d-flex.justify-content-between
+        .news__image
+            .news__image-img(
+                style="background: url(images/news/" + image + ".jpg) no-repeat center; background-size: cover"
+            )
+        .news__content.d-md-flex.flex-column.justify-content-between
+            p.text-white=title
+            p.normalText.mb-0=time
