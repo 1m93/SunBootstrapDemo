@@ -26,7 +26,7 @@ mixin slidePoster (data)
                 +poster (data[i].name, data[i].year, data[i].image, data[i].describe)
 
 mixin trailerVideo (image, name)
-    .trailer.col-md.mb-3.mb-md-0
+    .trailer.col-md.mb-4.mb-md-0
         .trailer__video
             img.trailer__video-img.img-fluid(src="images/trailers/" + image + ".jpg" alt="")
             .trailer__video-text.d-flex.flex-column.justify-content-center.text-center
@@ -34,7 +34,7 @@ mixin trailerVideo (image, name)
                     i.fal.fa-play-circle
                     p.mb-0 play
         .trailer__name.mt-3
-            p=name
+            p.mb-0=name
 
 mixin watch (image, score, name)
     .watch__list-item.card.border-0.bg-transparent.col-6.col-md-4.col-lg-2.mb-4.mb-lg-0
