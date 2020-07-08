@@ -3,7 +3,7 @@ mixin poster (name, year, image, describe)
         style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/slides/" + image + ".jpg) no-repeat top; background-size: cover; background-attachment: fixed"
     )
         .poster__text
-            h1.display-4=name
+            h1.display-md-4=name
                 p.lead.d-inline="(" + year + ")"
             p.normalText.lead=describe
             hr.my-2
